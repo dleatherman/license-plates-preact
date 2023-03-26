@@ -7,14 +7,6 @@ const Header = () => (
 		<a href="/">
 			<h1>License Plates</h1>
 		</a>
-		<nav>
-			<Link activeClassName={style.active} href="/">
-				Home
-			</Link>
-			<Link activeClassName={style.active} href="/profile">
-				Me
-			</Link>
-		</nav>
 	</header>
 );
 
