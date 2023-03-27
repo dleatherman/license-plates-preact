@@ -12,6 +12,7 @@ import Home from '../routes/home';
 const App = () => {
 	return (
 		<Fragment id="app">
+			<a href="#main" class="visually-hidden skip-to-content">Skip to content</a>
 			<Header />
 			<main id="main">
 				<Router>
