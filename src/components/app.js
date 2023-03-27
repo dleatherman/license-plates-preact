@@ -1,3 +1,4 @@
+import "preact/debug";
 import { h } from 'preact';
 import { Router } from 'preact-router';
 
