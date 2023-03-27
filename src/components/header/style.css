@@ -1,0 +1,14 @@
+header {
+  display: block;
+  text-align: center;
+}
+
+header svg {
+  color: var(--color-foreground);
+  max-width: 5rem;
+}
+
+svg {
+  height: auto;
+  max-width: 100%;
+}

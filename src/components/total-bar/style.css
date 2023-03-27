@@ -1,0 +1,9 @@
+.totalBar {
+  background: var(--color-background);
+  bottom: 0;
+  box-shadow: 0 0 1rem 1rem var(--color-background);
+  color: var(--color-foreground);
+  padding: 2rem;
+  position: sticky;
+  text-align: center;
+}

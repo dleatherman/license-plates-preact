@@ -6,15 +6,17 @@ import Header from './header';
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
 
-const App = () => (
-	<div id="app">
-		<Header />
-		<main id="main">
-			<Router>
-				<Home path="/" />
-			</Router>
-		</main>
-	</div>
-);
+const App = () => {
+	return (
+		<Fragment id="app">
+			<Header />
+			<main id="main">
+				<Router>
+					<Home path="/" />
+				</Router>
+			</main>
+		</Fragment>
+	)
+};
 
 export default App;
