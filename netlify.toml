@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+  NODE_ENV = "19.5.0"
+
+[dev]
+  command = "npm run dev"
