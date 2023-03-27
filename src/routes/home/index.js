@@ -1,4 +1,6 @@
 import { Fragment, h } from 'preact'
+import { useEffect, useState } from 'preact/hooks';
+import { keys } from 'idb-keyval';
 
 import style from './style.css';
 
@@ -8,10 +10,18 @@ import TotalBar from '../../components/home/total-bar'
 import states from '../../data/states';
 
 const Home = () => {
+	const [foundStates, setFoundStates] = useState([]);
+	useEffect(() => {
+		const getAllFoundStates = () => {
+			keys().then((keys) => setFoundStates(keys));
+		}
+		getAllFoundStates();
+		return () => { };
+	}, []);
 	return (
 		<Fragment>
-			<ListStates states={states} />
-			<TotalBar states={states} />
+			<ListStates states={states} foundStates={foundStates} />
+			<TotalBar states={states} foundStates={foundStates} />
 		</Fragment>
 	);
 };

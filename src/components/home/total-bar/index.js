@@ -1,9 +1,10 @@
+import { useState } from 'preact/hooks';
 import style from './style.css';
 
-const TotalBar = ({ states }) => {
+const TotalBar = ({ states, foundStates }) => {
   return (
     <p class={style.totalBar}>
-      0 /
+      {foundStates && foundStates.length} /
       {states.length}
     </p>
   )
