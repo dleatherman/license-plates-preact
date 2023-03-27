@@ -1,4 +1,4 @@
-import State from '../../state';
+import State from '../state';
 
 import style from './style.css';
 
