@@ -1,5 +1,6 @@
 import { Fragment, h } from 'preact'
 import { useEffect, useState } from 'preact/hooks';
+import { signal } from "@preact/signals";
 import { keys } from 'idb-keyval';
 
 import style from './style.css';
