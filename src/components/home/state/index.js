@@ -9,14 +9,18 @@ const State = ({ stateName }) => {
   const addState = (state) => {
     foundStates.value = [...foundStates.value, state]
   }
+  const removeState = (state) => {
+    foundStates.value = [...foundStates.value.filter(stateName => stateName !== state)]
+  }
 
   const handleChange = (e) => {
     const value = e.target.value;
     if (e.target.checked) {
-      addState(e.target.value);
+      addState(value);
       set(value, true)
         .catch((err) => console.warn(err));
     } else {
+      removeState(value);
       del(value)
         .catch((err) => console.warn(err));
     }
