@@ -1,5 +1,3 @@
-import { h } from 'preact';
-
 import Logo from '../logo'
 
 import style from './style.css';
