@@ -7,7 +7,7 @@ const ListStates = ({ states, foundStates }) => {
     <ul class={style.ul}>
       {states
         .map((stateName) => <li>
-          <State key={stateName} stateName={stateName} checked={foundStates && foundStates.includes(stateName.toLowerCase())} foundStates={foundStates} />
+          <State key={stateName} stateName={stateName} />
         </li>)
       }
     </ul>

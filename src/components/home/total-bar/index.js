@@ -1,9 +1,11 @@
+import { numberOfStates } from '../../../signals/StateSignals';
+
 import style from './style.css';
 
-const TotalBar = ({ states, foundStates }) => {
+const TotalBar = ({ states }) => {
   return (
     <p class={style.totalBar}>
-      {foundStates && foundStates.length} /
+      {numberOfStates.value} /
       {states.length}
     </p>
   )
